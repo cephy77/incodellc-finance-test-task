@@ -1,0 +1,10 @@
+.svgIcon {
+  fill: grey;
+  cursor: pointer;
+
+  transition: fill ease 0.5s;
+
+  &:hover {
+    fill: #1f69e9;
+  }
+}

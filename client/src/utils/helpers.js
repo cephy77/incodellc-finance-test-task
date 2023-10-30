@@ -1,0 +1,1 @@
+export const areSharePricesEqual = (oldProps, newProps) => (oldProps.price === newProps.price);

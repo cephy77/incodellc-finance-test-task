@@ -1,0 +1,63 @@
+@import '../../styles/variables.scss';
+
+.share {
+  &Wrapper {
+    display: grid;
+    grid-template-columns: 40px 70px 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 320px;
+    padding: 16px;
+    border-top: 1px solid grey;
+
+    transition: all ease 0.5s;
+
+    &UP {
+      background-color: $upBgLight;
+    }
+
+    &DOWN {
+      background-color: $downBgLight;
+    }
+  }
+
+  &Ticker {
+    justify-self: start;
+    padding: 4px;
+    margin: 0;
+    width: 100%;
+    font-size: medium;
+    text-align: center;
+    border-radius: 4px;
+
+    transition: all ease 0.5s;
+
+    &UP {
+      background-color: $upBg;
+      color: $upText;
+    }
+
+    &DOWN {
+      background-color: $downBg;
+      color: $downText;
+    }
+  }
+
+  &Price,
+  &PriceChange {
+    font-family: 'Space Mono';
+    transition: all ease 0.5s;
+
+    &UP {
+      color: $upText;
+    }
+
+    &DOWN {
+      color: $downText;
+    }
+  }
+
+  &PriceChange {
+    font-size: 14px;
+  }
+}
