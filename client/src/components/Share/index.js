@@ -66,6 +66,7 @@ export const Share = ({ share }) => {
           className={cn(style.sharePriceChange, {
             [style[`sharePrice${shareState}`]]: true,
           })}
+          data-testid='sharePriceChange'
         >
           {sign}{share.change_percent}%
         </p>
